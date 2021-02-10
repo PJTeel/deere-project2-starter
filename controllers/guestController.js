@@ -15,13 +15,9 @@ router.get("/currentList", (req, res) => {
 
 
 
-//Create new
-router.post("/addGuest", (req, res) => {
-   Guest.create(req, res).then((newGuest) => {
-     res.redirect("profile.ejs", {
-        Guest: guestLists,
-     });
-});
+//Create new guest
+router.get("/addGuest", (req, res) => {
+        res.render("signup.ejs");
  });
 
 /*
