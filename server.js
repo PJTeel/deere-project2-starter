@@ -14,7 +14,7 @@ app.use(express.static("public"));
 
 // HOMEPAGE
 app.get("/", (req, res) => {
-  res.render("index.ejs");
+  res.render("home.ejs");
 });
 
 app.use(express.urlencoded({ extended: true })); //parsing data so it can be rendered

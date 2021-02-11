@@ -3,23 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Wedding Guest <Link:favicon></Link:favicon></title>
+    <title>Guest List</title>
   </head>
   <body>
-    <h1>Wedding Guest List</h1>
-    <nav>
-      <a href="/guestlist/addGuest">Add Guest</a>
+      <h1>Guest List</h1>
+      <% for(let i = 0; i < guests.length; i++) { %>
+        <li>
+          <a href="/<%= guests[i].lastName %>"><%= guests[i].lastName %></a>
+
+        </li>
+
+        <% } %>
+
       <br/>
+      <a href="/">Return Home</a>
       <br/>
-      <a href="/auth/login">Update Guest</a>
-      <br/>
-      <br/>
-      <a href="/auth/logout">Delete Guest</a>
-      <br/>
-      <br/>
-      <br/>
-      <a href="/currentList"> Guest List</a>
     </nav>
   </body>
 </html>
-
