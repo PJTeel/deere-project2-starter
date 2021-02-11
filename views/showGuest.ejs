@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+  </head>
+
+  <body>
+    <h1>Guest Show page</h1>
+    <%= guestList.firstName1 %> <%= guestList.lastName %> 
+    <% if (guestList.rsvpRec) { %>
+    This guest will be attending <% } else {%> This guest is not attending or has not yet RSVP'd. <% } %>
+    
+    
+      </li>
+      <br />
+      
+
+    <form action="/<%= guestList.lastName %>?_method=DELETE" method="POST">
+      <input type="submit" value="DELETE <%= guestList.lastName%>" />
+  </body>
+</html>

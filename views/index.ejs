@@ -6,11 +6,18 @@
     <title>Guest List</title>
   </head>
   <body>
-      <h1>Guest List</h1>
+      <h1>Guest List Index</h1>
       <% for(let i = 0; i < guests.length; i++) { %>
         <li>
-          <a href="/<%= guests[i].lastName %>"><%= guests[i].lastName %></a>
-
+          <a href="/<%= guests[i].lastName %>"><%= guests[i].firstName1 %> <%= guests[i].lastName %></a>
+          
+          <form action="/<%= guests[i].lastname; %>?_method=DELETE" method="POST">
+            <input type="submit" value="Delete Guest"/>
+          
+            <a href="/<%= guests[i].lastName; %>/edit">Edit Guest Profile</a>
+          </br>
+        </br>
+          </form>
         </li>
 
         <% } %>

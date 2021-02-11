@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Profile Page</title>
+  </head>
+
+  <body>
+    <h1>Edit Guest Profile Page</h1>
+    <h2> <%= guests[i].firstName1 %> <%= guests[i].lastName %></h1>
+    
+
+    <form action="/guestList/<%= guestList.id %>?_method=PUT" method="POST">
+      <br />
+      Wedding invite sent: <input type="checkbox" name="inviteSent" /><br/>
+      <br />
+      RSVP'd Yes: <input type="checkbox" name="rsvpRec" /><br/>
+      <br />
+      Number of guests: <input type="text" name="name" /><br />
+      <br />
+      Wedding gift: <input type="text" name="name" /><br />
+      <br />
+      Wedding gift Thank You sent: <input type="text" name="name" /><br />
+      <br />
+      Shower gift: <input type="text" name="name" /><br />
+      <br />
+      Shower gift Thank You sent: <input type="text" name="name" /><br />
+      <br />
+      <input type="submit" value="Update Guest" />
+      <br />
+      </form>
+    </form>
+
+    <br /><br />
+    <a href="/">Back to Homepage</a>
+  </body>
+</html>
