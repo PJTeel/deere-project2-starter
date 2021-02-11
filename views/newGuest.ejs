@@ -17,6 +17,15 @@
       Last Name: <input type="text" name="lastName" /><br />
       <br />
       <br />
+
+      <select name="guestId">
+        <% for(let i = 0; i < mailAddress.length; i++) { let selected = ( i == 0
+        ) ? "selected" : ""; %>
+        <option value='<%= mailAddress[i].id %>' selected><%=mailAddress[i].address%></option>
+        <% } %>
+      </select>
+
+
       <input type="submit" value="Add Guest" />
     </form>
   </body>

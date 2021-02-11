@@ -11,7 +11,7 @@
         <li>
           <a href="/guestlist/<%= guests[i].id %>"><%= guests[i].firstName1 %> <%= guests[i].lastName %></a>
           
-          <form action="/<%= guests[i].id; %>?_method=DELETE" method="POST">
+          <form action="/guestlist/<%= guests[i].id; %>?_method=DELETE" method="POST">
             <input type="submit" value="Delete Guest"/>
    
           </br>
