@@ -9,9 +9,9 @@
   <body>
     <h1>Edit Guest Profile Page</h1>
     <h2> <%= guests[i].firstName1 %> <%= guests[i].lastName %></h1>
-    
+      
 
-    <form action="/guestList/<%= guestList.id %>?_method=PUT" method="POST">
+    <form action="/guestlist/<%= guests[i].id %>?_method=PUT" method="POST">
       <br />
       Wedding invite sent: <input type="checkbox" name="inviteSent" /><br/>
       <br />

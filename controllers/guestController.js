@@ -49,20 +49,19 @@ router.get("/displayList", (req, res) => {
 
 
 //Show guest profile page
-router.get("/guestList/:id", (req, res) => {
+router.get("/:id", (req, res) => {
   Guest.findByPk(req.params.id, {
-    include: [{ model: guestList }, { model: mailAddress }],
+  //  include: [{ model: Guest }, { model: Address }],
   }).then((singleGuest) => {
     Address.findAll().then((allAddresses) => {
       console.log(singleGuest);
       res.render('edit.ejs', {
-        guest: singleGuest,
+        guests: singleGuest,
         address: allAddresses,
       });
     });
   });
 });
-
 
 //delete guest
 router.delete("/:lastName", (req, res) => {
