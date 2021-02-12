@@ -56,7 +56,9 @@
 
 <!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
 
-In this project I have created a full stack web application for my niece to track information on the people invited to her wedding.  
+In this project I have created a full stack web application for my niece to track information on her wedding guests. When I was planning my wedding 19 years ago, I had a spiral bound wedding planner. I used this planner throughout the process, from planning the big day up until the last thank you was written. I have even referenced it over the years. My goal was to create an electronic version of my spiral bound book. My niece can start using it right away to work on compiling her master guest list. Once she has the list provided, she will be able to use the app to keep track of when she mails her wedding invite. She will also be able to track which guests RSVP'd with a "Yes" and the number of people attending. The app allows her to log any shower and wedding gifts she receives from each guest, as well as indicate if she has sent a thank you note to the person. I've included the functuality for her to be able to view the entire guest list on one page. She will also be able to view a summary page for each guest. This will allow her to keep an eye on which guests have not RSVP'd to the wedding invitation.
+
+The application is still a little rough around the edges. However, it still accomplishes what I initially set out to do. My niece has an electronic version of my spiral bound wedding planner.
 
 
 <!-- **To avoid retyping too much info. Do a search and replace with your text editor for the following:** -->
@@ -69,8 +71,10 @@ In this project I have created a full stack web application for my niece to trac
 * [Visual Studio Code](https://code.visualstudio.com/)
 * [HEROKU](https://heroku.com)
 * [Sequelize](https://sequelize.org)
-
-
+* [Node.js](https://nodejs.org/en/)
+* [Postgres](https://www.postgresql.org/)
+* [Express](http://expressjs.com/)
+* [EJS](https://ejs.co/)
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -100,6 +104,10 @@ This is an example of how to list things you need to use the software and how to
 
 <!-- USAGE EXAMPLES -->
 ## Usage
+My wireframes for this project are located at:
+[Wireframes](https://github.com/PJTeel/deere-project2-starter/tree/master/wireframes)
+
+
 User Stories:
 As a bride I want to be able to:
  - Add guests to the guest list.
@@ -121,7 +129,7 @@ As a bride I want to be able to:
 <!-- ROADMAP -->
 ## Roadmap
 
-See the [open issues](https://github.com/PJTeel/Unit1-dog-trivia) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/PJTeel/deere-project2-starter) for a list of proposed features (and known issues).
 
 
 

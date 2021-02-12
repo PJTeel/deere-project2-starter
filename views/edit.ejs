@@ -13,19 +13,27 @@
 
     <form action="/guestlist/<%= guests.id %>?_method=PUT" method="POST">
       <br />
-      Wedding invite sent: <input type="checkbox" name="inviteSent" value="<%= guests.inviteSent %>" /><br/>
+      Wedding invite sent: <input type="checkbox" name="inviteSent" <% if(guests.inviteSent === true) { %>
+        checked <%} %> />
+      <br/>
       <br />
-      RSVP'd Yes: <input type="checkbox" name="rsvpRec" value="<%= guests.rsvpRec %>"/><br/>
+      RSVP'd Yes: <input type="checkbox" name="rsvpRec" <% if(guests.rsvpRec === true) { %>
+        checked <%} %> />
+      <br/>
       <br />
       Number of guests: <input type="text" name="count" value="<%= guests.count %>"/><br />
       <br />
       Wedding gift: <input type="text" name="weddingGift" value="<%= guests.weddingGift %>" /><br />
       <br />
-      Wedding gift Thank You sent: <input type="checkbox" name="weddingThanks"> <%= guests.weddingThanks %><br/>
+      Wedding gift Thank You sent: <input type="checkbox" name="weddingThanks" <% if(guests.weddingThanks === true) { %>
+        checked <%} %> />
+      <br />  
       <br />
       Shower gift: <input type="text" name="showerGift" value="<%= guests.showerGift %>"/><br />
       <br />
-      Shower gift Thank You sent: <input type="checkbox" name="showerThanks"><%= guests.showerThanks %><br/>
+      Shower gift Thank You sent: <input type="checkbox" name="showerThanks" <% if(guests.showerThanks === true) { %>
+        checked <%} %> />
+      <br/>
       <br />
       <input type="submit" value="Update Guest" />
       <br />
