@@ -5,7 +5,7 @@ const {
 module.exports = (sequelize, DataTypes) => {
   class guestList extends Model {
      static associate(models) {
-          }
+      guestList.belongsTo(models.mailAddress, {foreignKey:'id'});  }
   };
   guestList.init({
     guestId: DataTypes.INTEGER,

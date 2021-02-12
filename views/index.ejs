@@ -5,25 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Guest List</title>
   </head>
+  
   <body>
-      <h1>Guest List Index</h1>
-      <% for(let i = 0; i < guests.length; i++) { %>
-        <li>
-          <a href="/guestlist/<%= guests[i].id %>"><%= guests[i].firstName1 %> <%= guests[i].lastName %></a>
-          
-          <form action="/guestlist/<%= guests[i].id; %>?_method=DELETE" method="POST">
-            <input type="submit" value="Delete Guest"/>
-   
+    <h1>Guest List Index</h1>
+    <% for(let i=0; i < guests.length; i++) { %>
+      <li>
+        <a href="/guestlist/<%= guests[i].id %>">
+          <%= guests[i].firstName1 %>
+            <%= guests[i].lastName %>
+        </a>
+        <form action="/guestlist/<%= guests[i].id; %>?_method=DELETE" method="POST">
+          <input type="submit" value="Delete Guest" />
           </br>
-        </br>
-          </form>
-        </li>
-
-        <% } %>
-
-      <br/>
-      <a href="/">Return Home</a>
-      <br/>
-    </nav>
+          </br>
+        </form>
+      </li>
+      <% } %>
+        <br />
+        <a href="/">Return Home</a>
+        <br />
+        </nav>
   </body>
-</html>
+  
+  </html>
